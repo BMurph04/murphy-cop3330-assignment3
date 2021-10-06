@@ -1,0 +1,9 @@
+@startuml
+
+class NameSort{
+    readFile();
+    writeFile();
+    sortNames();
+}
+
+@enduml
