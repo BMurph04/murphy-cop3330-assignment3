@@ -1,3 +1,7 @@
+/*
+ *  UCF COP3330 Fall 2021 Assignment 3 Solution
+ *  Copyright 2021 Brendon Murphy
+ */
 package ex41;
 import java.io.*;
 import java.util.ArrayList;
@@ -33,9 +37,11 @@ public class NameSort{
     //Write new array to a new txt file
     public static void setFile(){
 
+        File newFile = new File("src/main/java/ex41/exercise41_output.txt");
+
         //Write new list
         try {
-            FileWriter writeFile = new FileWriter("exercise41_output.txt");
+            FileWriter writeFile = new FileWriter(newFile);
             for(String names: namesList){
                 writeFile.write(names + "\n");
             }

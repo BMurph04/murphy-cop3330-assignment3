@@ -1,0 +1,10 @@
+@startuml
+
+class NameSort{
+    +ArrayList<String> namesList
+    +void readFile();
+    +void writeFile();
+    +void sortNames();
+}
+
+@enduml

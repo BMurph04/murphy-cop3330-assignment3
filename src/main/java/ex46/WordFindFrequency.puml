@@ -1,0 +1,25 @@
+@startuml
+
+class WordFrequency{
+    +void compareWords();
+    +void incrementFreq(int index);
+    +void sortArray();
+    +void printResult();
+}
+
+class WordInfo{
+    -String word;
+    -int wordFreq;
+    --
+    +String getWord();
+    +int getWordFreq();
+    --
+    +void setWordFreq(int wordFreq);
+    --
+    +int compareTo(WordInfo compareWord);
+    +String toString();
+}
+
+WordFrequency --> WordInfo : contains
+
+@enduml

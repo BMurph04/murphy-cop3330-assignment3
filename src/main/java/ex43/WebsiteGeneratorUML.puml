@@ -1,0 +1,26 @@
+@startuml
+
+class WebsiteGenerator{
+    +void askUser()
+    +void createFiles()
+}
+class UserInput{
+    -String siteName
+    -String authorName
+    -String wantsJS
+    -String wantsCSS
+    --
+    +String getSiteName()
+    +String getAuthorName()
+    +String getWantsJS()
+    +String getWantsCSS()
+    --
+    +void setSiteName()
+    +void setAuthorName()
+    +void setWantsJS()
+    +void setWantsCSS()
+}
+
+WebsiteGenerator --> UserInput : contains
+
+@enduml

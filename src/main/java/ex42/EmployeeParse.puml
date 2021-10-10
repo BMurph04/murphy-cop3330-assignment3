@@ -1,0 +1,26 @@
+@startuml
+
+class ParseData{
+
+    +getData();
+    +printList();
+
+}
+
+class EmployeeData{
+    -firstName
+    -lastName
+    -salary
+    --
+    +getFirstName();
+    +getLastName();
+    +getSalary();
+    --
+    +setFirstName();
+    +setLastName();
+    +setSalary();
+}
+
+ParseData --> "many" EmployeeData : contains
+
+@enduml

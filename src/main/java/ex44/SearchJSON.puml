@@ -1,0 +1,29 @@
+@startuml
+
+class Product{
+    -String name
+    -double price
+    -int quantity
+    --
+    +String getName()
+    +double getPrice()
+    +int getQuantity()
+    --
+    +void setName()
+    +void setPrice()
+    +void setQuantity()
+}
+class ProductList{
+    -ArrayList<Product> productList
+    --
+    +ArrayList<Product> getProductList()
+    +void setProductList()
+}
+class ProductSearch{
+    +Product findProduct()
+    +void printResult()
+
+}
+ProductSearch --> ProductList : contains
+ProductList --> "many" Product : contains
+@enduml

@@ -1,0 +1,11 @@
+@startuml
+class WordFinder{
+
+    +String readString()
+    +String replaceString()
+    +void writeString()
+
+}
+
+
+@enduml
